@@ -1,0 +1,115 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f5f3f7;
+  color: #2c2c2c;
+  line-height: 1.6;
+}
+
+h1, h2, h3 {
+  text-align: center;
+  color: #5e35b1;
+  margin-top: 2rem;
+}
+
+section {
+  margin: 50px auto;
+  max-width: 1000px;
+  padding: 20px 30px;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(126, 87, 194, 0.15);
+}
+
+ul {
+  list-style-type: square;
+  padding-left: 20px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+  background-color: #fafafa;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+table th {
+  background-color: #d1c4e9;
+  color: #333;
+}
+
+table, th, td {
+  border: 1px solid #e0d7f3;
+}
+
+th, td {
+  padding: 14px;
+  text-align: left;
+}
+
+code {
+  background: #eee7f5;
+  color: #6a1b9a;
+  padding: 3px 6px;
+  border-radius: 4px;
+  font-family: monospace;
+}
+
+pre {
+  background: #f3e9fb;
+  padding: 15px;
+  border-left: 4px solid #7e57c2;
+  border-radius: 6px;
+  overflow-x: auto;
+  margin-bottom: 10px;
+}
+
+.example {
+  background: #fff;
+  border-left: 4px solid #7e57c2;
+  padding: 15px;
+  margin: 10px 0 30px;
+  border-radius: 6px;
+}
+
+.flex-demo {
+  background: #f3e5f5;
+  padding: 20px;
+  margin: 30px 0;
+  border-radius: 10px;
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.flex-item {
+  background: #7e57c2;
+  color: white;
+  padding: 15px 20px;
+  border-radius: 8px;
+  flex: 1 1 120px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.row {
+  flex-direction: row;
+}
+
+.column {
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.wrap {
+  flex-wrap: wrap;
+}
+
+.center {
+  justify-content: center;
+  align-items: center;
+  height: 150px;
+}
