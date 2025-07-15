@@ -1,14 +1,27 @@
+:root {
+  --violet-main: #5e35b1;
+  --violet-light: #ede7f6;
+  --violet-dark: #311b92;
+  --violet-medium: #7e57c2;
+
+  --yellow-soft: #fff9e1;
+  --yellow-warm: #e0c97a;
+
+  --text-dark: #2c2c2c;
+  --bg-light: #f5f3f7;
+}
+
 body {
   font-family: 'Segoe UI', sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #f5f3f7;
-  color: #2c2c2c;
+  background-color: var(--bg-light);
+  color: var(--text-dark);
   line-height: 1.6;
 }
 
 a {
-  color: #5e35b1;
+  color: var(--violet-main);
   text-decoration: none;
   font-weight: bold;
   transition: color 0.3s ease, background-color 0.3s ease;
@@ -17,13 +30,13 @@ a {
 }
 
 a:hover {
-  background-color: #ede7f6;
-  color: #311b92;
+  background-color: var(--violet-light);
+  color: var(--violet-dark);
 }
 
 h1, h2, h3 {
   text-align: center;
-  color: #5e35b1;
+  color: var(--violet-main);
   margin-top: 2rem;
 }
 
@@ -36,11 +49,13 @@ section {
   box-shadow: 0 4px 12px rgba(126, 87, 194, 0.15);
 }
 
+/* Listes */
 ul {
   list-style-type: square;
   padding-left: 20px;
 }
 
+/* Tableaux */
 table {
   width: 100%;
   border-collapse: collapse;
@@ -64,6 +79,7 @@ th, td {
   text-align: left;
 }
 
+/* Code */
 code {
   background: #eee7f5;
   color: #6a1b9a;
@@ -75,20 +91,22 @@ code {
 pre {
   background: #f3e9fb;
   padding: 15px;
-  border-left: 4px solid #7e57c2;
+  border-left: 4px solid var(--violet-medium);
   border-radius: 6px;
   overflow-x: auto;
   margin-bottom: 10px;
 }
 
+/* Encadré exemple */
 .example {
-  background: #fff;
-  border-left: 4px solid #7e57c2;
+  background: var(--yellow-soft);
+  border-left: 4px solid var(--yellow-warm);
   padding: 15px;
   margin: 10px 0 30px;
   border-radius: 6px;
 }
 
+/* Flex demo */
 .flex-demo {
   background: #f3e5f5;
   padding: 20px;
@@ -100,7 +118,7 @@ pre {
 }
 
 .flex-item {
-  background: #7e57c2;
+  background: var(--violet-medium);
   color: white;
   padding: 15px 20px;
   border-radius: 8px;
@@ -109,21 +127,25 @@ pre {
   font-weight: bold;
 }
 
-.row {
-  flex-direction: row;
+/* Classes direction/flex */
+.row { flex-direction: row; }
+.column { flex-direction: column; align-items: flex-start; }
+.wrap { flex-wrap: wrap; }
+.center { justify-content: center; align-items: center; height: 150px; }
+
+/* Bouton simple */
+button {
+  background-color: var(--yellow-warm);
+  color: #2c2c2c;
+  border: none;
+  padding: 0.6rem 1.2rem;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s;
 }
 
-.column {
-  flex-direction: column;
-  align-items: flex-start;
-}
-
-.wrap {
-  flex-wrap: wrap;
-}
-
-.center {
-  justify-content: center;
-  align-items: center;
-  height: 150px;
+button:hover {
+  background-color: var(--violet-medium);
+  color: white;
 }
