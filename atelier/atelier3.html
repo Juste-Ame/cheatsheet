@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <title>Atelier 3 - Intelligence Artificielle</title>
+  <link rel="stylesheet" href="style/atelier3.css" />
+</head>
+<body>
+
+  <h1>🤖 Atelier 3 : Comprendre l’Intelligence Artificielle</h1>
+
+  <section>
+    <h2>1. Les métiers liés à l’IA</h2>
+    <p>L’intelligence artificielle transforme de nombreux secteurs et fait émerger de nouveaux métiers. En voici deux exemples clés :</p>
+    <ul>
+      <li><strong>Ingénieur de prompt</strong> : il conçoit des instructions optimisées pour guider les IA génératives comme ChatGPT. Son rôle est de formuler des prompts qui maximisent la qualité et la pertinence des réponses.</li>
+      <li><strong>Data analyste</strong> : il collecte, organise et analyse de grandes quantités de données pour produire des indicateurs utiles aux entreprises. Il peut utiliser des outils d’IA pour visualiser des tendances ou faire des prédictions.</li>
+    </ul>
+    <p>Ces métiers sont de plus en plus recherchés dans le monde professionnel.</p>
+  </section>
+
+  <section>
+    <h2>2. Panorama des intelligences artificielles</h2>
+    <p>L’IA est déjà très présente dans notre quotidien, parfois sans que l’on s’en rende compte. Voici quelques exemples concrets :</p>
+    <ul>
+      <li><strong>Assistants vocaux</strong> : Siri, Alexa, Google Assistant (compréhension du langage, réponse automatisée)</li>
+      <li><strong>Chatbots</strong> : services clients sur les sites internet, assistants bancaires</li>
+      <li><strong>Moteurs de recommandation</strong> : Netflix, YouTube, Spotify (IA qui propose des contenus selon les préférences)</li>
+      <li><strong>Reconnaissance d’image</strong> : déverrouillage par visage, tri automatique des photos</li>
+      <li><strong>Traduction automatique</strong> : Google Translate, DeepL</li>
+      <li><strong>IA génératives</strong> :
+        <ul>
+          <li>Texte : ChatGPT, Gemini</li>
+          <li>Image : DALL·E, Midjourney</li>
+          <li>Vidéo : Sora</li>
+          <li>Musique : Suno</li>
+        </ul>
+      </li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>3. IA générative vs non générative</h2>
+    <ul>
+      <li><strong>IA génératives</strong> : elles produisent du contenu nouveau, comme du texte, des images, de la vidéo ou du son. Exemple : ChatGPT, qui génère des réponses à des questions.</li>
+      <li><strong>IA non génératives</strong> : elles analysent, classent ou décident à partir de données existantes, mais ne créent rien de nouveau. Exemple : un moteur de recommandation ou un système de reconnaissance faciale.</li>
+    </ul>
+    <p>Ce qui les différencie, c’est surtout leur finalité : créer ou décider.</p>
+  </section>
+
+  <section>
+    <h2>4. Le rôle des données dans l’entraînement d’une IA</h2>
+    <p>Les IA apprennent à partir d’un grand ensemble de données appelées <strong>corpus d’entraînement</strong>. Pour une IA générative comme ChatGPT, ce corpus contient des textes venant de livres, d’articles, de sites web, de forums, etc.</p>
+    <p>Ces données ne sont pas stockées mot pour mot, mais servent à <strong>entraîner</strong> un modèle statistique qui apprend les structures du langage et les associations entre mots, sans en comprendre le sens.</p>
+
+    <p><em>Suggestion de schéma :</em></p>
+    <ul>
+      <li><strong>Sources de données</strong> (livres, articles, pages web)</li>
+      <li><strong>Modèle IA</strong> (apprentissage à partir des textes)</li>
+      <li><strong>Utilisateur</strong> (l’IA répond à une question en générant du texte basé sur ce qu’elle a appris)</li>
+    </ul>
+    <p><em>[image : image.png]</em></p>
+
+    <p>Ce schéma montre que l’IA ne va pas chercher la réponse en temps réel, mais la construit à partir de ce qu’elle a déjà vu.</p>
+  </section>
+
+  <section>
+    <h2>5. L’aspect probabiliste de l’IA</h2>
+    <p>Une IA générative comme ChatGPT ne connaît pas la vérité. Elle ne pense pas, ne comprend pas, et ne vérifie pas les faits. Elle fonctionne de manière <strong>probabiliste</strong> : elle génère un mot après l’autre en choisissant, à chaque étape, <strong>le mot le plus probable</strong> selon le contexte.</p>
+    <p>Cela explique :</p>
+    <ul>
+      <li>pourquoi l’IA peut donner plusieurs réponses différentes à la même question</li>
+      <li>pourquoi elle peut inventer des informations (“hallucinations”)</li>
+      <li>pourquoi elle est fluide, mais parfois imprécise ou fausse</li>
+    </ul>
+    <p><em>[image : arbre_proba.png]</em></p>
+  </section>
+
+  <section>
+    <h2>6. Les éléments d’un bon prompt</h2>
+
+    <h3>1. Clarté</h3>
+    <p><strong>Prompt flou :</strong><br>
+    <em>Fais-moi une présentation.</em><br>
+    (L’IA ne sait pas sur quoi, pour qui, ni dans quel format.)</p>
+
+    <p><strong>Prompt clair :</strong><br>
+    <em>Fais une présentation sur le street art.</em><br>
+    (Le thème est défini, mais il manque encore des informations utiles.)</p>
+
+    <h3>2. Contexte</h3>
+    <p><strong>Prompt sans contexte :</strong><br>
+    <em>Fais une présentation sur le street art.</em><br>
+    (On ne sait pas à qui elle s’adresse, ni dans quel cadre.)</p>
+
+    <p><strong>Prompt avec contexte :</strong><br>
+    <em>Fais une présentation sur le street art destinée à des lycéens, pour un cours d’arts plastiques.</em><br>
+    (Le public et l’objectif sont précisés.)</p>
+
+    <h3>3. Précision</h3>
+    <p><strong>Prompt sans précision :</strong><br>
+    <em>Fais une présentation sur le street art destinée à des lycéens, pour un cours d’arts plastiques.</em><br>
+    (On ne connaît pas la longueur, ni le format.)</p>
+
+    <p><strong>Prompt précis :</strong><br>
+    <em>Fais une présentation PowerPoint de 5 diapositives sur le street art, destinée à des lycéens pour un cours d’arts plastiques. Utilise un ton pédagogique et illustré.</em><br>
+    (Le format, le ton, le public et la longueur sont clairs.)</p>
+  </section>
+
+  <section>
+    <h2>7. Biais et limites de l’IA</h2>
+    <p>Les IA apprennent à partir de données humaines… et peuvent donc reproduire des <strong>biais</strong> présents dans ces données.</p>
+
+    <p><strong>Exemple réel :</strong></p>
+    <p>En 2018, Amazon a testé un outil d’aide au recrutement basé sur l’IA. Problème : l’algorithme favorisait les candidatures masculines, car il avait été entraîné sur dix ans de CV majoritairement masculins. L’IA a fini par pénaliser les candidatures de femmes, simplement en reproduisant une tendance passée.</p>
+
+    <p>Autres limites :</p>
+    <ul>
+      <li>Les IA peuvent inventer des faits (“halluciner”)</li>
+      <li>Elles peuvent mal comprendre des questions ambiguës</li>
+      <li>Elles ne savent pas interpréter l’humour, les émotions ou les valeurs culturelles</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>8. L’impact environnemental de l’IA</h2>
+    <p>L’intelligence artificielle nécessite d’énormes ressources informatiques, ce qui a un impact direct sur l’environnement :</p>
+    <ul>
+      <li><strong>Entraînement</strong> : Le modèle GPT-3, par exemple, a nécessité environ 1 300 MWh pour son entraînement, soit la consommation électrique annuelle de 120 foyers français.</li>
+      <li><strong>Utilisation quotidienne</strong> : Chaque requête à une IA générative consomme 10 à 100 fois plus d’énergie qu’une recherche sur un moteur classique.</li>
+      <li><strong>Maintenance</strong> : Les serveurs sur lesquels sont hébergées les IA doivent fonctionner 24h/24. Ils nécessitent une alimentation continue et un système de refroidissement, ce qui représente un coût énergétique et environnemental permanent.</li>
+    </ul>
+    <p>Des efforts sont en cours pour réduire ces impacts, en concevant des modèles plus légers ou en utilisant des énergies renouvelables dans les centres de données.</p>
+  </section>
+
+  <section>
+    <h2>9. Conclusion : une vision critique mais optimiste</h2>
+    <p>L’IA n’est ni bonne ni mauvaise en soi. Elle est un outil puissant, capable d’assister la créativité, l’apprentissage, la recherche ou la prise de décision.</p>
+    <p>Mais elle pose aussi des défis : protection de la vie privée, biais, dépendance technologique, coût environnemental…</p>
+    <p>C’est pourquoi il est essentiel de comprendre ses mécanismes, ses limites, et de l’utiliser avec esprit critique, éthique et responsabilité.</p>
+  </section>
+
+</body>
+</html>

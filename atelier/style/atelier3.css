@@ -1,0 +1,237 @@
+/* === BASE === */
+body {
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f5f3f7;
+  color: #2c2c2c;
+  line-height: 1.7;
+}
+
+/* === TITRES === */
+h1, h2, h3 {
+  text-align: center;
+  color: #5e35b1;
+  margin-top: 2rem;
+}
+
+h1 {
+  font-size: 2.2rem;
+}
+
+h2 {
+  font-size: 1.6rem;
+}
+
+h3 {
+  font-size: 1.3rem;
+}
+
+/* === SECTIONS (gros blocs blancs arrondis) === */
+section {
+  margin: 50px auto;
+  max-width: 900px;
+  padding: 30px;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 6px 14px rgba(126, 87, 194, 0.1);
+}
+
+/* === PARAGRAPHES & TEXTES SIMPLES === */
+p {
+  margin-bottom: 1rem;
+  font-size: 1rem;
+  text-align: justify;
+  color: #3a3a3a;
+}
+
+/* === LIENS === */
+a {
+  color: #5e35b1;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 4px 6px;
+  border-radius: 6px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+a:hover {
+  background-color: #ede7f6;
+  color: #311b92;
+}
+
+/* === LISTES === */
+ul {
+  list-style-type: square;
+  padding-left: 25px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  color: #4a148c;
+}
+
+ul ul {
+  list-style-type: circle;
+  margin-top: 6px;
+  margin-bottom: 12px;
+  padding-left: 20px;
+  color: #6a1b9a;
+}
+
+/* === TABLES === */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+  background-color: #fafafa;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+th, td {
+  padding: 14px;
+  text-align: left;
+}
+
+table th {
+  background-color: #d1c4e9;
+  color: #333;
+}
+
+table, th, td {
+  border: 1px solid #e0d7f3;
+}
+
+/* === BLOCS D’EXEMPLES UNIQUEMENT === */
+.example,
+pre {
+  background: #f3e9fb;
+  border-left: 4px solid #7e57c2;
+  padding: 15px 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(126, 87, 194, 0.08);
+  margin: 20px 0;
+}
+
+/* === CODE === */
+code {
+  background: #eee7f5;
+  color: #6a1b9a;
+  padding: 3px 6px;
+  border-radius: 4px;
+  font-family: monospace;
+}
+
+/* === FLEXBOX DEMO === */
+.flex-demo {
+  background: #f3e5f5;
+  padding: 20px;
+  margin: 30px 0;
+  border-radius: 10px;
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.flex-item {
+  background: #7e57c2;
+  color: white;
+  padding: 15px 20px;
+  border-radius: 8px;
+  flex: 1 1 120px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.row {
+  flex-direction: row;
+}
+
+.column {
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.wrap {
+  flex-wrap: wrap;
+}
+
+.center {
+  justify-content: center;
+  align-items: center;
+  height: 150px;
+}
+
+/* === RESPONSIVE MOBILE === */
+@media screen and (max-width: 600px) {
+  body {
+    font-size: 16px;
+    padding: 10px;
+  }
+
+  section {
+    padding: 20px;
+  }
+}
+
+/* === PARAGRAPHES & TEXTES === */
+p {
+  margin-bottom: 1rem;
+  color: #3a3a3a;
+  font-size: 1rem;
+  text-align: justify;
+}
+
+/* === LIENS === */
+a {
+  color: #5e35b1;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 4px 6px;
+  border-radius: 6px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+a:hover {
+  background-color: #ede7f6;
+  color: #311b92;
+}
+
+/* === LISTES === */
+ul {
+  list-style-type: square;
+  padding-left: 25px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  color: #4a148c;
+}
+
+ul ul {
+  list-style-type: circle;
+  margin-top: 6px;
+  margin-bottom: 12px;
+  padding-left: 20px;
+  color: #6a1b9a;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+  background-color: #fafafa;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+th, td {
+  padding: 14px;
+  text-align: left;
+}
+
+table th {
+  background-color: #d1c4e9;
+  color: #333;
+}
+
+table, th, td {
+  border: 1px solid #e0d7f3;
+}
