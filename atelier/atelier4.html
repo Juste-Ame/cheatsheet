@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <title>Atelier 4 - Métiers du développement web</title>
+  <link rel="stylesheet" href="style/atelier4.css" />
+</head>
+<body>
+
+  <h1>💻 Atelier 4 : Les métiers du développement web</h1>
+
+  <section>
+    <h2>Les trois grandes familles de développeurs</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Métier</th>
+          <th>Description</th>
+          <th>Langages principaux</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>Développeur·se Frontend</strong></td>
+          <td>Gère la <strong>partie visible</strong> d’un site (design, interaction, affichage)</td>
+          <td>HTML, CSS, JavaScript</td>
+        </tr>
+        <tr>
+          <td><strong>Développeur·se Backend</strong></td>
+          <td>Gère la <strong>partie invisible</strong> (bases de données, logique, sécurité)</td>
+          <td>Python, PHP, Node.js, SQL</td>
+        </tr>
+        <tr>
+          <td><strong>Développeur·se Full Stack</strong></td>
+          <td>Combine les deux compétences pour gérer un projet <strong>de bout en bout</strong></td>
+          <td>Frontend + Backend</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <section>
+    <h3>Exemples de missions</h3>
+
+    <h4>Frontend</h4>
+    <ul>
+      <li>Intégrer des maquettes graphiques en HTML/CSS</li>
+      <li>Ajouter des interactions avec JavaScript</li>
+      <li>Créer des interfaces utilisateurs responsives</li>
+    </ul>
+
+    <h4>Backend</h4>
+    <ul>
+      <li>Créer et interroger des bases de données</li>
+      <li>Gérer les comptes utilisateurs</li>
+      <li>Mettre en place des systèmes de sécurité</li>
+    </ul>
+
+    <h4>Full Stack</h4>
+    <ul>
+      <li>Gérer l’ensemble du développement d’un site</li>
+      <li>Concevoir des API (interfaces de communication)</li>
+      <li>Assurer la cohérence entre le front et le back</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Introduction au code</h2>
+
+    <h3>Qu’est-ce que coder ?</h3>
+    <p>Coder, c’est <strong>donner des instructions à une machine</strong> à l’aide d’un langage compréhensible par l’ordinateur. Cela permet de :</p>
+    <ul>
+      <li>Créer des sites web</li>
+      <li>Développer des jeux ou des applications</li>
+      <li>Automatiser des tâches</li>
+      <li>Traiter des données</li>
+    </ul>
+
+    <h3>Exemple : déverrouiller un téléphone (pseudo-code)</h3>
+    <pre><code>
+1. Allumer l’appareil.
+2. L’appareil demande un mot de passe.
+3. L’utilisatrice saisit le code.
+4. Si bon → téléphone déverrouillé.
+5. Si faux :
+   - Moins de 5 erreurs → message d’erreur.
+   - 5 erreurs ou plus → téléphone bloqué.
+    </code></pre>
+  </section>
+
+  <section>
+    <h2>Les langages informatiques</h2>
+    <h3>Quelques langages connus et leurs usages</h3>
+    <table>
+      <thead>
+        <tr>
+          <th>Langage</th>
+          <th>Utilisation principale</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td><strong>HTML</strong></td><td>Structure d’une page web</td></tr>
+        <tr><td><strong>CSS</strong></td><td>Mise en forme visuelle (couleurs, tailles, position…)</td></tr>
+        <tr><td><strong>JavaScript</strong></td><td>Interactions (clics, animations, formulaires…)</td></tr>
+        <tr><td><strong>Python</strong></td><td>Traitement de données, automatisation, IA</td></tr>
+        <tr><td><strong>Scratch</strong></td><td>Initiation à la logique de programmation</td></tr>
+      </tbody>
+    </table>
+  </section>
+
+  <section>
+    <h2>Fonctionnement d’un site web</h2>
+    <ol>
+      <li>Tu ouvres un <strong>navigateur web</strong> (ex: Chrome, Firefox)</li>
+      <li>Tu entres une adresse (ex: <a href="http://www.exemple.com">www.exemple.com</a>)</li>
+      <li>Le navigateur envoie une <strong>demande</strong> au <strong>serveur</strong></li>
+      <li>Le serveur renvoie les fichiers (HTML, CSS, JS…)</li>
+      <li>Le navigateur les interprète et <strong>affiche la page</strong></li>
+    </ol>
+    <p><em>📌 Un schéma explicatif du fonctionnement d’un site web sera inséré ici.</em></p>
+  </section>
+
+  <section>
+    <h2>Frontend vs Backend</h2>
+    <table>
+      <thead>
+        <tr><th>Partie</th><th>Description</th></tr>
+      </thead>
+      <tbody>
+        <tr><td><strong>Frontend</strong></td><td>Ce que l’on <strong>voit et utilise</strong> : texte, images, formulaires…</td></tr>
+        <tr><td><strong>Backend</strong></td><td>Ce que l’on <strong>ne voit pas</strong>, mais qui fait fonctionner le site</td></tr>
+      </tbody>
+    </table>
+    <p><em>video a rajouter.</em></p>
+  </section>
+
+  <section>
+    <h2>Structure d’un fichier HTML</h2>
+    <table>
+      <thead>
+        <tr><th>Élément</th><th>Rôle</th></tr>
+      </thead>
+      <tbody>
+        <tr><td><code>&lt;head&gt;</code></td><td>Informations invisibles : titre, lien CSS, encodage, etc.</td></tr>
+        <tr><td><code>&lt;body&gt;</code></td><td>Contenu visible de la page</td></tr>
+      </tbody>
+    </table>
+    <p><em><img src="image/structure_code_html.png" alt=""></em></p>
+  </section>
+
+  <section>
+    <h2>Structure d’une page HTML</h2>
+    <table>
+      <thead>
+        <tr><th>Élément</th><th>Rôle</th></tr>
+      </thead>
+      <tbody>
+        <tr><td><code>&lt;header&gt;</code></td><td>En-tête : logo, menu, titre</td></tr>
+        <tr><td><code>&lt;body&gt;</code></td><td>Contenu visible : articles, images…</td></tr>
+        <tr><td><code>&lt;footer&gt;</code></td><td>Pied de page : mentions, contacts</td></tr>
+      </tbody>
+    </table>
+    <p><em><img src="image/structure_corps_html.png" alt=""></em></p>
+  </section>
+
+  <section>
+    <h2>Comprendre une page HTML</h2>
+    <h3>Le trio HTML / CSS / JavaScript</h3>
+    <table>
+      <thead>
+        <tr><th>Langage</th><th>Rôle</th></tr>
+      </thead>
+      <tbody>
+        <tr><td><strong>HTML</strong></td><td><strong>Structure</strong> (squelette)</td></tr>
+        <tr><td><strong>CSS</strong></td><td><strong>Apparence</strong> (style)</td></tr>
+        <tr><td><strong>JavaScript</strong></td><td><strong>Interactions</strong> (clics, formulaires…)</td></tr>
+      </tbody>
+    </table>
+    <p><em>rajouter un gif</em></p>
+
+    <h3>Qu’est-ce qu’une balise HTML ?</h3>
+    <ul>
+      <li>Permet de <strong>définir un élément</strong> sur la page</li>
+      <li>Composée de <code>&lt;nom&gt;</code> et <code>&lt;/nom&gt;</code></li>
+      <li>Certaines sont <strong>auto-fermantes</strong> : <code>&lt;img /&gt;</code></li>
+    </ul>
+    <img src="image/balise_explication.png" alt="">
+
+    <h3>Qu’est-ce qu’un attribut HTML ?</h3>
+    <ul>
+      <li>Une <strong>info supplémentaire</strong> dans une balise ouvrante</li>
+      <li>Exemples : <code>src</code>, <code>href</code>, <code>alt</code>, <code>class</code>, <code>id</code></li>
+    </ul>
+    
+
+    <pre><code>&lt;img src="photo.jpg" alt="Portrait"&gt;
+&lt;a href="https://site.com"&gt;Lien vers le site&lt;/a&gt;
+    </code></pre>
+
+    <p><em>📌 Schéma sur les attributs ici.</em></p>
+
+    <h3>Quelques balises HTML de base</h3>
+    <table>
+      <thead>
+        <tr><th>Balise</th><th>Description</th></tr>
+      </thead>
+      <tbody>
+        <tr><td><code>&lt;h1&gt; à &lt;h6&gt;</code></td><td>Titres de différentes tailles</td></tr>
+        <tr><td><code>&lt;p&gt;</code></td><td>Paragraphe de texte</td></tr>
+        <tr><td><code>&lt;img&gt;</code></td><td>Image à afficher</td></tr>
+        <tr><td><code>&lt;a&gt;</code></td><td>Lien hypertexte</td></tr>
+        <tr><td><code>&lt;ul&gt;</code></td><td>Liste non ordonnée</td></tr>
+      </tbody>
+    </table>
+
+    <h3>À propos des balises de titre <code>&lt;h1&gt;</code> à <code>&lt;h6&gt;</code></h3>
+    <ul>
+      <li>Organisent le contenu</li>
+      <li><code>&lt;h1&gt;</code> est le plus important</li>
+      <li>Utiles pour le <strong>référencement</strong></li>
+    </ul>
+
+    <h3>À propos de la balise <code>&lt;img&gt;</code></h3>
+    <ul>
+      <li>Affiche une <strong>image</strong></li>
+      <li>Utilise l’attribut <code>src</code></li>
+      <li>Utiliser <code>alt</code> pour décrire l’image</li>
+    </ul>
+    <pre><code>&lt;img src="chien.jpg" alt="Chien qui court"&gt;</code></pre>
+    <img src="image/balise_img.png" alt="">
+
+    <h3>À propos de la balise <code>&lt;a&gt;</code></h3>
+    <ul>
+      <li>Crée un <strong>lien cliquable</strong></li>
+      <li>Utilise l’attribut <code>href</code></li>
+    </ul>
+    <pre><code>&lt;a href="https://exemple.com"&gt;Visiter le site&lt;/a&gt;</code></pre>
+    <img src="image/balise_a.png" alt="">
+</section>
+
+
+  <section>
+    <h2>Exercice : Créer sa première page HTML</h2>
+
+    <h3>Objectif</h3>
+    <p>Créer un <strong>fichier HTML simple</strong> contenant les balises principales vues.</p>
+
+    <h3>Étapes</h3>
+    <ol>
+      <li>Créer un <strong>dossier</strong> nommé <code>MonPremierSite</code></li>
+      <li>Ouvrir VS Code ou Sublime Text</li>
+      <li>Créer un nouveau fichier <code>index.html</code></li>
+      <li>Coller le <strong>squelette HTML</strong> fourni par le formateur</li>
+      <li>Ajouter :
+        <ul>
+          <li>un <code>&lt;h1&gt;</code> avec ton nom</li>
+          <li>un paragraphe <code>&lt;p&gt;</code> de présentation</li>
+          <li>une image <code>&lt;img&gt;</code></li>
+          <li>un lien <code>&lt;a&gt;</code> vers un site que tu aimes</li>
+        </ul>
+      </li>
+      <li>Enregistrer, puis ouvrir le fichier dans un navigateur</li>
+    </ol>
+  </section>
+
+</body>
+</html>

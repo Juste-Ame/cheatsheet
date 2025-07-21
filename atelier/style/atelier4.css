@@ -15,11 +15,6 @@ h1, h2, h3 {
   margin-top: 2rem;
 }
 
-img {
- width: 800px;
- height: auto;
-}
-
 h1 {
   font-size: 2.2rem;
 }
@@ -239,4 +234,10 @@ table th {
 
 table, th, td {
   border: 1px solid #e0d7f3;
+}
+
+img {
+    height: auto;
+    width: 500px;
+    align-items: center;
 }
