@@ -1,0 +1,64 @@
+body {
+  
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* Bannière */
+.banniere {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.banniere img {
+  width: 100%;
+  height: 50px; /* 🔧 Modifie ici la hauteur de la bannière */
+  object-fit: cover;
+  display: block;
+}
+
+.texte-banniere {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-size: 2rem;
+}
+
+/* Deuxième image */
+.contenu {
+  padding: 20px;
+  text-align: center;
+}
+
+.contenu img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 12px;
+}
+.bloc {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+}
+
+.bloc img {
+  width: 150px;
+  height: auto;
+  margin-right: 20px;
+}
+
+.boite {
+  background-color: blue ;               /* fond blanc */
+  border: 4px solid #b39ddb;       /* barre violette à gauche */
+  padding: 15px 20px;                   /* marge intérieure */
+  margin: 15px 0;                       /* espace entre les boîtes */
+  border-radius: 10px;                  /* coins arrondis */
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05); /* ombre légère */
+}
+

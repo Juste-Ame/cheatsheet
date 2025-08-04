@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Image pleine largeur</title>
+  <link rel="stylesheet" href="style/atelier5.css"> 
+  
+</head>
+<body>
+    <style>
+    .image-plein-largeur {
+      width: 100%;        /* prend toute la largeur de la page */
+      height: 400px;      /* change cette valeur pour ajuster la hauteur */
+      object-fit: fill;  /* garde les proportions et coupe si nécessaire */
+      display: block;
+    }
+  </style>
+    <video class="plein-largeur" controls autoplay loop muted>
+    <source src="image/20250717_114730.mp4" type="video/mp4">
+    Ton navigateur ne supporte pas la vidéo HTML5.
+  </video>
+  <div class="bloc">
+    <p>Voici un texte placé à côté de l’image.</p>
+    <img src="image/chat.jfif" alt="Image">
+  </div>
+
+  <img src="image/bebe_chat.jpg" alt="Image" class="image-plein-largeur">
+  <div class="boite">
+    <p><strong>Missions :</strong></p>
+    <ul>
+        <li>Créer des sites web</li>
+        <li>Optimiser l’affichage sur mobile</li>
+    </ul>
+  </div>
+</body>
+</html>
